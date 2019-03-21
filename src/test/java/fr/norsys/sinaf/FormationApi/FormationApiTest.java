@@ -1,38 +1,23 @@
 package fr.norsys.sinaf.FormationApi;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static org.junit.Assert.assertFalse;
 
-/**
- * Unit test for simple App.
- */
-public class FormationApiTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public FormationApiTest( String testName )
-    {
-        super( testName );
-    }
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.junit4.SpringRunner;
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( FormationApiTest.class );
-    }
+import org.junit.Test;
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void FormationApiApp()
-    {
-        assertTrue( true );
-    }
+@RunWith(SpringRunner.class)
+@SpringBootTest
+@ActiveProfiles("test")
+
+
+public class FormationApiTest{
+	
+	@Test
+	public void test() {
+		assertFalse(false);
+	}
 }
