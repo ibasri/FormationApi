@@ -1,4 +1,4 @@
-package fr.norsys.sinaf.FormationApi.model;
+package fr.norsys.sinaf.FormationApi.dao;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,9 +11,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @Setter
 @Getter
-public class PoleFormation {
+public class MetierDto {
 
-	private Long idPole;
-	private String libellePole;
-	private String descriptionPole;
+	public String description;
+	
 }

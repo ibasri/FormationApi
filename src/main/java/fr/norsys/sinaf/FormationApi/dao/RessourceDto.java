@@ -1,4 +1,4 @@
-package fr.norsys.sinaf.FormationApi.dto;
+package fr.norsys.sinaf.FormationApi.dao;
 
 import java.util.List;
 

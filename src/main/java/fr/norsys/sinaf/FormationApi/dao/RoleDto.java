@@ -1,4 +1,5 @@
-package fr.norsys.sinaf.FormationApi.dto;
+package fr.norsys.sinaf.FormationApi.dao;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,8 +12,6 @@ import lombok.Setter;
 @NoArgsConstructor
 @Setter
 @Getter
-public class MetierDto {
-
-	public String description;
-	
+public class RoleDto {
+	private String code;
 }

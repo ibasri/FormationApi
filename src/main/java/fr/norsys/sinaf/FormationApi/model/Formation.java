@@ -19,15 +19,14 @@ public class Formation {
 	private String intitule;
 	private TypeFormation typeFormation;
 	private String etat;
-	private PoleFormation pole;
 	private LocalDate dateDebut;
 	private LocalDate dateFin;
 	
-	//formateur, type, pole :  voir la possibilité Enum/paramétrage
+	
 	
 	@Override
 	public String toString() {
-		return "Formation [idFormation=" + idFormation + ", intitule=" + intitule + ", type=" +typeFormation+ ", etat=" +etat+ ", pole= "+ pole + ", "
+		return "Formation [idFormation=" + idFormation + ", intitule=" + intitule + ", type=" +typeFormation+ ", etat=" +etat+ ", , "
 				+", dateDebut="+dateDebut+" , dateFin="+dateFin+"]";
 	}
 	

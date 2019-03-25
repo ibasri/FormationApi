@@ -6,20 +6,21 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter
-@Setter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-public class Cours {
+@Setter
+@Getter
+public class Pole {
 
-	private Long idCours;
-	private String intitule;
-	private Seance seance;
+	private Long idPole;
+	private String libellePole;
+	private String descriptionPole;
 
 	@Override
 	public String toString() {
-		return "Cours [idCours=" + idCours + ", intitule=" + intitule + ", seance=" + seance + "]";
+		return "PoleFormation [idPole=" + idPole + ", libellePole=" + libellePole + ", descriptionPole="
+				+ descriptionPole + "]";
 	}
 
 }

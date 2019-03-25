@@ -15,6 +15,12 @@ public class FormateurExterne {
 
 	private Long idFormateurExterne;
 	private String nom;
-	private String prenom;	
-	
+	private String prenom;
+
+	@Override
+	public String toString() {
+		return "FormateurExterne [idFormateurExterne=" + idFormateurExterne + ", nom=" + nom + ", prenom=" + prenom
+				+ "]";
+	}
+
 }

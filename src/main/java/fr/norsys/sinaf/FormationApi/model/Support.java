@@ -1,4 +1,5 @@
 package fr.norsys.sinaf.FormationApi.model;
+
 import java.time.LocalDate;
 
 import lombok.AllArgsConstructor;
@@ -17,4 +18,11 @@ public class Support {
 	private String intitule;
 	private LocalDate dateImport;
 	private Cours cours;
+
+	@Override
+	public String toString() {
+		return "Support [idSupport=" + idSupport + ", intitule=" + intitule + ", dateImport=" + dateImport + ", cours="
+				+ cours + "]";
+	}
+
 }

@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import fr.norsys.sinaf.FormationApi.dto.*;
+import fr.norsys.sinaf.FormationApi.dao.*;
 
 @FeignClient(name="ressourceProjet")
 public interface RessourceClient {

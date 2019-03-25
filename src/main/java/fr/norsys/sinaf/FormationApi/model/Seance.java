@@ -13,7 +13,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Builder
 public class Seance {
-	
+
 	private Long idSeance;
 	private String intitule;
 	private FormateurExterne formateurExterne;
@@ -21,8 +21,12 @@ public class Seance {
 	private LocalDate dateDebut;
 	private LocalDate dateFin;
 	private Formation formation;
-	private FicheEvaluation ficheEvaluation;
-	private FichePresence fichePresence;
-	
+
+	@Override
+	public String toString() {
+		return "Seance [idSeance=" + idSeance + ", intitule=" + intitule + ", formateurExterne=" + formateurExterne
+				+ ", objet=" + objet + ", dateDebut=" + dateDebut + ", dateFin=" + dateFin + ", formation=" + formation
+				+ "]";
+	}
 
 }
